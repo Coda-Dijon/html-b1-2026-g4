@@ -4,7 +4,7 @@ Membres du groupe :
 
 - Alexis Vayssiere
 - Baroni Enzo
-- C
+- Mateja Miljic
 - Antony Renault
 
 [Consignes](CONSIGNES.md)
