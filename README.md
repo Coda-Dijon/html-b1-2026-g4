@@ -3,7 +3,7 @@
 Membres du groupe :
 
 - Alexis Vayssiere
-- B
+- Baroni Enzo
 - C
 - D
 
