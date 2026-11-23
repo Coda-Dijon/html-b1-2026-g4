@@ -5,7 +5,7 @@ Membres du groupe :
 - Alexis Vayssiere
 - Baroni Enzo
 - C
-- D
+- Antony Renault
 
 [Consignes](CONSIGNES.md)
 
