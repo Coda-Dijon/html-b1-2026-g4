@@ -2,7 +2,7 @@
 
 Membres du groupe :
 
-- A
+- Alexis Vayssiere
 - B
 - C
 - D
