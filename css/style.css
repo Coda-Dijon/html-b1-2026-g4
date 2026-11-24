@@ -70,9 +70,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     letter-spacing: -0.02em;
 }
 
-nav { margin: 0 auto; }
+.nav { margin: 0 auto; }
 
-nav ul {
+.nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -81,7 +81,7 @@ nav ul {
     list-style: none;
 }
 
-nav a {
+.nav a {
     display: block;
     padding: 8px 16px;
     border-radius: 12px;
@@ -90,8 +90,8 @@ nav a {
     transition: background-color 0.15s, color 0.15s;
 }
 
-nav a:hover { background-color: var(--surface-2); color: var(--texte); }
-nav a[aria-current="page"] { color: var(--texte); background-color: var(--surface); }
+.nav a:hover { background-color: var(--surface-2); color: var(--texte); }
+.nav a[aria-current="page"] { color: var(--texte); background-color: var(--surface); }
 
 /* ---------- Boutons ---------- */
 .bouton {
@@ -122,7 +122,7 @@ nav a[aria-current="page"] { color: var(--texte); background-color: var(--surfac
 .bouton-rouge:hover { background-color: var(--rouge-fonce); }
 
 /* ---------- Contenu ---------- */
-main {
+.main {
     flex: 1;
     width: 100%;
     max-width: 1200px;
