@@ -2,99 +2,99 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+    margin: 0;
 }
 
 /* ---------- Header fixe ---------- */
 :root {
-  --hauteur-header: 70px;
+    --hauteur-header: 70px;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--hauteur-header);
-  border-bottom: 2px solid #000;
-  background: #fff;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--hauteur-header);
+    border-bottom: 2px solid #000;
+    background: #fff;
+    z-index: 100;
 }
 
 .nav {
-  height: 100%;
-  max-width: 1800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    height: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* ---------- Main ---------- */
 .main {
-  width: 92%;                 /* occupe presque toute la largeur */
-  max-width: 1800px;          /* limite sur très grands écrans */
-  margin: 0 auto;
-  padding: calc(var(--hauteur-header) + 30px) 0 40px;
+    width: 92%;                 /* occupe presque toute la largeur */
+    max-width: 1800px;          /* limite sur très grands écrans */
+    margin: 0 auto;
+    padding: calc(var(--hauteur-header) + 30px) 0 40px;
 }
 
 .titre {
-  margin: 0 0 30px;
-  text-align: center;
+    margin: 0 0 30px;
+    text-align: center;
 }
 
 /* ---------- Grille des recettes ---------- */
 .recettes {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  /* autant de colonnes que possible, chacune d'au moins 300px */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    /* autant de colonnes que possible, chacune d'au moins 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
 }
 
 /* ---------- Carte recette ---------- */
 .carte {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  text-decoration: none;
-  color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .carte__image {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 2px solid #000;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 2px solid #000;
 }
 
 img.carte__image {
-  object-fit: cover;
+    object-fit: cover;
 }
 
 .carte__nom {
-  text-align: center;
+    text-align: center;
 }
 
 /* ---------- Petits écrans ---------- */
 @media (max-width: 560px) {
-  :root {
-    --hauteur-header: 56px;
-  }
+    :root {
+        --hauteur-header: 56px;
+    }
 
-  .main {
-    width: 94%;
-  }
+    .main {
+        width: 94%;
+    }
 
-  .recettes {
-    grid-template-columns: 1fr;   /* 1 seule colonne */
-    gap: 24px;
-  }
+    .recettes {
+        grid-template-columns: 1fr;   /* 1 seule colonne */
+        gap: 24px;
+    }
 }
