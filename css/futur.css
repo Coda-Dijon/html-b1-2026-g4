@@ -1,0 +1,24 @@
+.barre
+{
+    width: 100%;
+    height: 40px;
+    background-color: #222;
+    color: white;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.text-defil 
+{
+    position: absolute;
+    white-space: nowrap;
+    animation: defilement 10s linear infinite;
+}
+
+@keyframes defilement 
+{
+    0% { left: 100%;}
+    100% { left: -100%;}
+}
