@@ -8,10 +8,16 @@
     </head>
     <body>
         <header class="header">
-            <nav class="nav">
-            <a href="../index.html">Accueil</a>
-            <a>Restorant</a>
-            <a href="futur.html">Futur</a>
+            <a class="marque" href="index.html">
+                <img src="image/chvaral-logo.webp" alt="Logo Chvaral" height="44">
+                <span>Chvaral</span>
+            </a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="html/resto.html">Restaurant</a></li>
+                    <li><a href="html/futur.html">Futur</a></li>
+                </ul>
             </nav>
         </header>
         <main class="main">
@@ -79,5 +85,28 @@
             </li>
             </ul>
         </main>
+        <footer class="footer">
+            <div class="pied">
+                <a class="marque" href="index.html">
+                    <img src="image/chvaral-logo.webp" alt="" height="44">
+                    <span>Chvaral</span>
+                </a>
+                <nav aria-labelledby="pied-decouvrir">
+                    <h2 id="pied-decouvrir">Découvrir</h2>
+                    <ul>
+                        <li><a href="html/resto.html">Restaurant</a></li>
+                        <li><a href="html/futur.html">Futur</a></li>
+                    </ul>
+                </nav>
+                <nav aria-labelledby="pied-infos">
+                    <h2 id="pied-infos">Informations</h2>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copyright"><small>&copy; 2026 Chvaral. Tous droits réservés.</small></p>
+        </footer>
     </body>
 </html>
