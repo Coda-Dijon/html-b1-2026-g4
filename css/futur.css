@@ -8,17 +8,33 @@
     position: relative;
     display: flex;
     align-items: center;
+    cursor:pointer;
+}
+.barre:hover .text-defil
+{
+    animation:defilement 21s linear infinite;
 }
 
 .text-defil 
 {
+    display: flex;
     position: absolute;
     white-space: nowrap;
-    animation: defilement 5s linear infinite;
+    animation: defilement 7s linear infinite;
 }
 
 @keyframes defilement
 {
-    0% { left: 100%;}
+    0% { left: 100%;}   
     100% { left: -100%;}
+}
+
+.text
+{
+    padding-right: 30%;
+}
+
+.text:hover
+{
+    font-size:20px;
 }
