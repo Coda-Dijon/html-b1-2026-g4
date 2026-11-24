@@ -14,10 +14,10 @@
 {
     position: absolute;
     white-space: nowrap;
-    animation: defilement 10s linear infinite;
+    animation: defilement 5s linear infinite;
 }
 
-@keyframes defilement 
+@keyframes defilement
 {
     0% { left: 100%;}
     100% { left: -100%;}
