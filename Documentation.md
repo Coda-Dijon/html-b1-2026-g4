@@ -1,21 +1,14 @@
 # Journal 
 Ici on va consigner tout ce qu'on a fait au cours des journées
 
-## charte graphique :
-Nom du site : **Chvaral**
-### header :
-
-## Page :
-
-### accueil :
+## Jours 1 : *2026-11-24*
+### charte graphique :
+### Page :
+#### accueil :
     Anthony
-### recette :
+#### recette :
     Enzo
-#### Nom des plats :
-
-### restorant :
+#### restorant :
     Alexis
-### avenir :
+#### avenir :
     Mateja
-
-## Footer :
