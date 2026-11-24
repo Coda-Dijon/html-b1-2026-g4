@@ -2,10 +2,10 @@
 
 Membres du groupe :
 
-- Alexis Vayssiere
-- Baroni Enzo
-- Mateja Miljic
-- Antony Renault
+- Alexis Vayssiere => resto
+- Baroni Enzo => recette
+- Mateja Miljic => futur
+- Antony Renault => acceuil
 
 [Consignes](CONSIGNES.md)
 
