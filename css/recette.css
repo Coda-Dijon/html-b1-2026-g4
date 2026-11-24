@@ -1,0 +1,159 @@
+:root {
+    --bg-page: #fbf8f3;
+    --bg-surface: #ffffff;
+    --bg-accent: #f6ebe0;
+    --text-main: #231f20;
+    --text-muted: #5c534e;
+    --accent-primary: #8b261d;
+    --accent-secondary: #b85d19;
+    --border-subtle: #e5d8c8;
+    --radius: 12px;
+    --shadow: 0 8px 24px rgba(35, 31, 32, 0.06);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-page);
+}
+
+/* En-tête & navigation */
+body>header {
+    width: 100%;
+    max-width: 720px;
+    margin: 2.5rem auto 1.5rem;
+    padding: 0 1.25rem;
+}
+
+nav[aria-label="Fil d'Ariane"] {
+    margin-bottom: 1rem;
+}
+
+nav[aria-label="Fil d'Ariane"] a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--bg-accent);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav[aria-label="Fil d'Ariane"] a::before {
+    content: "←";
+}
+
+nav[aria-label="Fil d'Ariane"] a:hover,
+nav[aria-label="Fil d'Ariane"] a:focus-visible {
+    background-color: var(--accent-primary);
+    color: #ffffff;
+    outline: none;
+}
+
+body>header h1 {
+    margin: 0 0 0.75rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.85rem, 4vw, 2.5rem);
+    line-height: 1.2;
+    color: var(--accent-primary);
+}
+
+body>header>p {
+    margin: 0;
+}
+
+/* Badge de prix via <data> */
+data {
+    display: inline-block;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--accent-secondary);
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+}
+
+/* Contenu principal */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto 2.5rem;
+    padding: 0 1.25rem;
+}
+
+article {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    box-shadow: var(--shadow);
+}
+
+article>p {
+    margin: 0 0 1.75rem;
+    font-size: 1.05rem;
+    color: var(--text-main);
+}
+
+/* Liste de définition (caractéristiques du plat) */
+dl {
+    margin: 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border-subtle);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem 1.5rem;
+}
+
+dt {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-muted);
+    margin-bottom: 0.2rem;
+}
+
+dd {
+    margin: 0 0 0.5rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* Pied de page */
+body>footer {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto 2rem;
+    padding: 1rem 1.25rem 0;
+    border-top: 1px solid var(--border-subtle);
+    text-align: center;
+    color: var(--text-muted);
+}
+
+body>footer p {
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    article {
+        padding: 1.25rem;
+    }
+}
