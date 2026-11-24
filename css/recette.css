@@ -124,28 +124,57 @@ article>p {
 }
 
 /* Liste de définition (caractéristiques du plat) */
+/* Liste de définition (caractéristiques du plat) */
 dl {
     margin: 0;
     padding-top: 1.25rem;
     border-top: 1px solid var(--bordure);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1rem 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    /* Toutes les colonnes ont la même largeur */
+    grid-template-rows: auto auto;
+    /* Ligne 1 = dt, Ligne 2 = dd */
+    gap: 0.25rem 1.5rem;
+    text-align: center;
 }
 
 dt {
+    grid-row: 1;
     font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--discret);
-    margin-bottom: 0.2rem;
 }
 
 dd {
-    margin: 0 0 0.5rem;
+    grid-row: 2;
+    margin: 0;
     font-weight: 600;
     color: var(--texte);
+}
+
+/* Adaptation mobile : repasse en vertical sous 480px */
+@media (max-width: 480px) {
+    dl {
+        grid-auto-flow: row;
+        grid-template-rows: auto;
+        gap: 0;
+    }
+
+    dt,
+    dd {
+        grid-row: auto;
+    }
+
+    dd {
+        margin-bottom: 1rem;
+    }
+
+    dd:last-child {
+        margin-bottom: 0;
+    }
 }
 
 /* Pied de page */
