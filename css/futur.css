@@ -13,7 +13,6 @@
 .barre:hover .text-defil
 {
     animation:defilement 15s linear infinite;
-    font-size: 30;
 }
 
 .text-defil 
