@@ -20,11 +20,16 @@
     --rouge-fonce: #a8141f;
     --police: "Inter", Helvetica, Arial, sans-serif;
 
+    --radius: 12px;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+
     --largeur-max: 1200px;
     --marge: clamp(16px, 4vw, 32px);
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
 
 html { -webkit-text-size-adjust: 100%; }
 
