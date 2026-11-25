@@ -1,4 +1,5 @@
-# Projet HTML du groupe 4
+# <img src="image/chvaral-logo.webp" alt="Logo chvaral" width="50"/> Chvaral
+## Projet HTML du groupe 4
 
 Membres du groupe :
 
