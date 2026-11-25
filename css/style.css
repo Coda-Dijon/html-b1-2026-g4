@@ -267,7 +267,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .carte__image {
     width: 100%;
     aspect-ratio: 16 / 9;
-    border: 2px solid #000;
+    border: 2px solid var(--texte);
 }
 
 img.carte__image {
