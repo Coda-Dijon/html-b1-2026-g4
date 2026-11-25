@@ -1,3 +1,5 @@
+/*-----------------------------------Partie Global et acceuil-----------------------------------*/
+
 @font-face {
     font-family: "Inter";
     font-style: normal;
@@ -238,7 +240,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     border: 0;
 }
 
-/*partie resto*/
+/*-----------------------------------Partie restaurant-----------------------------------*/
 
 /* ---------- Main ---------- */
 .main_resto {
@@ -295,3 +297,10 @@ img.carte_image {
         gap: 24px;
     }
 }
+
+/*-----------------------------------Partie recettes-----------------------------------*/
+
+
+
+/*-----------------------------------Partie futur-----------------------------------*/
+
