@@ -313,7 +313,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     width: 92%;
     max-width: 1800px;
     margin: 0 auto;
-    padding: 30px 0 40px;
+    padding: 0 0 40px;
 }
 
 .titre_resto {
