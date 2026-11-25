@@ -11,9 +11,9 @@
 
 .article {
     display: flex;
-    width: 400%; /* 100% par slide (ici 3 slides = 300%) */
+    width: 400%;
     height: 100%;
-    transition: transform 0.5s ease-in-out; /* Animation de glissement */
+    transition: transform 0.5s ease-in-out;
   }
 
 .slide {
@@ -32,14 +32,14 @@
 #slide4:checked ~ .article { transform :translateX(-75%); }
 
   .fleches {
-    display: none; /* Cachées par défaut, affichées selon la slide active */
+    display: none;
     position: absolute;
     top: 50%;
     width: 100%;
     transform: translateY(-50%);
     justify-content: space-between;
     padding: 0 20px;
-    pointer-events: none; /* Permet de cliquer sur la bannière entre les flèches */
+    pointer-events: none;
   }
 
   .fleches label {
@@ -58,13 +58,12 @@
     transform: scale(1.2);
   }
 
-  /* Affiche la bonne paire de flèches pour chaque bannière */
   #slide1:checked ~ .fleches-1 { display: flex; }
   #slide2:checked ~ .fleches-2 { display: flex; }
   #slide3:checked ~ .fleches-3 { display: flex; }
   #slide4:checked ~ .fleches-4 { display: flex; }
 
-  /* Exemple de style pour le contenu texte si vous ne mettez pas tout dans l'image */
+
   .banniere-contenu h2 {
     background: #d32f2f;
     color: white;
