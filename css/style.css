@@ -537,3 +537,44 @@ body>.footer_recette p {
 }
 
 /*-----------------------------------Partie futur-----------------------------------*/
+
+
+
+/*-----------------------------------Partie mension legal-----------------------------------*/
+
+.ml1 {
+    grid-row: 1;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--texte);
+}
+
+.ml2 {
+    grid-row: 2;
+    margin: 0;
+    font-weight: 600;
+    color: var(--texte);
+}
+
+/* Adaptation mobile : repasse en vertical sous 480px */
+@media (max-width: 480px) {
+    dl {
+        grid-auto-flow: row;
+        grid-template-rows: auto;
+        gap: 0;
+    }
+
+    .ml1, .ml2 {
+        grid-row: auto;
+    }
+
+    .ml2 {
+        margin-bottom: 1rem;
+    }
+
+    .ml2:last-child {
+        margin-bottom: 0;
+    }
+}
