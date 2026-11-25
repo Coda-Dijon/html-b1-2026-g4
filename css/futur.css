@@ -29,7 +29,7 @@
 #slide1:checked ~ .article { transform: translateX(0%); }
 #slide2:checked ~ .article { transform: translateX(-25%); }
 #slide3:checked ~ .article { transform: translateX(-50%); }
-#slide4:checked ~ .article { transform :translateX(-75%)}
+#slide4:checked ~ .article { transform :translateX(-75%); }
 
   .fleches {
     display: none; /* Cachées par défaut, affichées selon la slide active */
@@ -62,7 +62,7 @@
   #slide1:checked ~ .fleches-1 { display: flex; }
   #slide2:checked ~ .fleches-2 { display: flex; }
   #slide3:checked ~ .fleches-3 { display: flex; }
-  #slide4:checked ~ .fleches-4 { display: flex;}
+  #slide4:checked ~ .fleches-4 { display: flex; }
 
   /* Exemple de style pour le contenu texte si vous ne mettez pas tout dans l'image */
   .banniere-contenu h2 {
