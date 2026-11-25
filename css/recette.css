@@ -83,6 +83,20 @@ body>header h1 {
     color: var(--texte);
 }
 
+/* Image dans l'en-tête : taille et centrage */
+header img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    /* Modifie cette valeur pour ajuster la largeur */
+    height: auto;
+    margin: 0 auto 1.25rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--bordure);
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
 body>header>p {
     margin: 0;
 }
@@ -123,7 +137,6 @@ article>p {
     color: var(--texte);
 }
 
-/* Liste de définition (caractéristiques du plat) */
 /* Liste de définition (caractéristiques du plat) */
 dl {
     margin: 0;
@@ -192,8 +205,19 @@ body>footer p {
     margin: 0;
 }
 
-@media (max-width: 480px) {
-    article {
-        padding: 1.25rem;
+/* ---------- Petits écrans ---------- */
+@media (max-width: 560px) {
+    :root {
+        --hauteur-header: 56px;
+    }
+
+    .main_resto {
+        width: 94%;
+    }
+
+    .recettes_resto {
+        grid-template-columns: 1fr;
+        /* 1 seule colonne */
+        gap: 24px;
     }
 }
