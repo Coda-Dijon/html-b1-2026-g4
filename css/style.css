@@ -90,8 +90,14 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     transition: background-color 0.15s, color 0.15s;
 }
 
-.nav a:hover { background-color: var(--surface-2); color: var(--texte); }
-.nav a[aria-current="page"] { color: var(--texte); background-color: var(--surface); }
+.nav a:hover {
+    background-color: var(--surface-2);
+    color: var(--texte);
+}
+.nav a[aria-current="page"] {
+    color: var(--texte);
+    background-color: var(--surface);
+}
 
 /* ---------- Boutons ---------- */
 .bouton {
@@ -110,8 +116,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
     transition: background-color 0.15s, transform 0.1s;
 }
 
-.bouton:hover { background-color: #2a2a2e; }
-.bouton:active { transform: scale(0.98); }
+.bouton:hover {
+    background-color: #2a2a2e;
+}
+.bouton:active {
+    transform: scale(0.98);
+}
 
 .bouton-rouge {
     background-color: var(--rouge);
