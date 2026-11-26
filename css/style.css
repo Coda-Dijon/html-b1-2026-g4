@@ -635,7 +635,6 @@ dl {
 .fleches label {
     pointer-events: auto;
     color: white;
-    font-size: 32px;
     font-weight: bold;
     cursor: pointer;
     padding: 10px 15px;
@@ -670,7 +669,7 @@ dl {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: 28px;
+    font-size: 1.5rem;
 }
 
 .actu img {
@@ -681,18 +680,19 @@ dl {
 }
 
 .actu h2 {
+    text-wrap-mode: nowrap;
     min-height: 20px ;
     margin-left: 30% ;
     margin-right: 30% ;
-    font-size: 40px;
+    font-size: clamp(0.5rem , 1.25rem , 2.5rem);
 }
 
 .actu p {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .actu ul li {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .Paragraphe {
