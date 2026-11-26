@@ -1,67 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=*, initial-scale=1.0">
-    <link href="css/futur.css" rel="stylesheet">
-    <title>chvaral_futur</title>
-</head>
-<body>
-    <div class="Avenir">
-        <h2> Nouveaux articles :</h2>
-        <p>Dans le cadre d'une futur implémentation mondiale, voici les possibles nouveautés que vous pourrez trouver dans les restaurants et les filiales de Chvaral.</p>
-        <div class="hero-slide">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2" >
-            <input type="radio" name="slider" id="slide3" >
-            <input type="radio" name="slider" id="slide4" >
-            <div class="article">
-                <div class="slide">
-                    <div class="actu">
-                        <img src="image/panda_express.jpg" alt="Restorant en Chine">
-                        <h3>Implémentation en Asie</h3>
-                        <p>Notre filiale s'agrandit et s'implantera en Asie, en Chine, à Shenzhen. Le restaurant portera le nom de "Panda Express +".</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=*, initial-scale=1.0">
+        <link href="css/futur.css" rel="stylesheet">
+        <title>chvaral_futur</title>
+    </head>
+    <body>
+        <header class="header">
+            <a class="marque" href="index.html">
+                <img src="image/chvaral-logo.webp" alt="" height="44">
+                <span>Chvaral Acceuil</span>
+            </a>
+            <nav class="nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Accueil</a></li>
+                    <li><a href="restaurant.html">Restaurant</a></li>
+                    <li><a href="futur.html">Futur</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="Avenir">
+                <h2> Nouveaux articles :</h2>
+                <p>Dans le cadre d'une futur implémentation mondiale, voici les possibles nouveautés que vous pourrez trouver dans les restaurants et les filiales de Chvaral.</p>
+                <div class="hero-slide">
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2" >
+                    <input type="radio" name="slider" id="slide3" >
+                    <input type="radio" name="slider" id="slide4" >
+                    <div class="article">
+                        <div class="slide">
+                            <div class="actu">
+                                <img src="image/panda_express.jpg" alt="Restorant en Chine">
+                                <h3>Implémentation en Asie</h3>
+                                <p>Notre filiale s'agrandit et s'implantera en Asie, en Chine, à Shenzhen. Le restaurant portera le nom de "Panda Express +".</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="actu">
+                                <img src="image/eauschvitz.jpg" alt="Bouteille d'eau">
+                                <h3>Partenariat germano-polonais</h3>
+                                <p>Nous effectuerons un partenariat avec Eau-schvitch, une eau naturellement gazeuse, qui fera fureur, nous en sommes convaincus.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="actu">
+                                <img src="image/flip_and_chips.jpg" alt="flip and chips">
+                                <h3>Nouvelle recette</h3>
+                                <p>Une nouvelle recette sera disponible : le "Flip and Chips". Preparer vous à sauvez Willy</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="actu">
+                                <img>
+                                <h3>Recette simiesque</h3>
+                                <p>Une nouvelle gamme de plats aux caractéristiques simiennes, comme le "Grégorilles", le "Laurent-Étang" et le "Monkey D. Dish".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fleches fleches-1">
+                        <label for="slide4">&#10094;</label>
+                        <label for="slide2">&#10095;</label>
+                    </div>
+                    <div class="fleches fleches-2">
+                        <label for="slide1">&#10094;</label>
+                        <label for="slide3">&#10095;</label>
+                    </div>
+                    <div class="fleches fleches-3">
+                        <label for="slide2">&#10094;</label>
+                        <label for="slide4">&#10095;</label>
+                    </div>
+                    <div class="fleches fleches-4">
+                        <label for="slide3">&#10094;</label>
+                        <label for="slide1">&#10095;</label>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="actu">
-                        <img src="image/eauschvitz.jpg" alt="Bouteille d'eau">
-                        <h3>Partenaria germano-polonais</h3>
-                        <p>Nous effectuerons un partenariat avec Eauschvitch, qui nous fournirons en eau naturellement gazeuse, qui fait fureur.</p>
-                    </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="pied">
+                <div class="pied-marque">
+                    <a class="marque" href="index.html">
+                        <img src="image/chvaral-logo.webp" alt="" height="44" loading="lazy">
+                        <span>Chvaral</span>
+                    </a>
+                    <speedlify2-score speedlify-url="https://speedlify-b1-2026-coda.baldir.fr/" 
+                    url="coda-dijon.github.io/html-b1-2026-g4/futur"></speedlify2-score>
                 </div>
-                <div class="slide">
-                    <div class="actu">
-                        <img src="image/flip_and_chips.jpg" alt="flip and chips">
-                        <h3>Nouvelle recette</h3>
-                        <p>Une nouvelle recette sera disponible : le "Flip and Chips".</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="actu">
-                        <img>
-                        <h3>Recette simiesque</h3>
-                        <p>Une nouvelle gamme de plats aux caractéristiques simiennes, comme le "Grégorilles", le "Laurent-Étang" et le "Monkey D. Dish".</p>
-                    </div>
-                </div>
+                <nav aria-labelledby="pied-decouvrir">
+                    <h2 id="pied-decouvrir">Découvrir</h2>
+                    <ul>
+                        <li><a href="restaurant.html">Restaurant</a></li>
+                        <li><a href="futur.html">Futur</a></li>
+                    </ul>
+                </nav>
+                <nav aria-labelledby="pied-infos">
+                    <h2 id="pied-infos">Informations</h2>
+                    <ul>
+                        <li><a href="https://github.com/Coda-Dijon/html-b1-2026-g4">Contact</a></li>
+                        <li><a href="mention_legal.html">Mentions légales</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="fleches fleches-1">
-                <label for="slide4">&#10094;</label>
-                <label for="slide2">&#10095;</label>
-            </div>
-            <div class="fleches fleches-2">
-                <label for="slide1">&#10094;</label>
-                <label for="slide3">&#10095;</label>
-            </div>
-            <div class="fleches fleches-3">
-                <label for="slide2">&#10094;</label>
-                <label for="slide4">&#10095;</label>
-            </div>
-            <div class="fleches fleches-4">
-                <label for="slide3">&#10094;</label>
-                <label for="slide1">&#10095;</label>
-            </div>
-        </div>
-    </div>
-</body>
+            <p class="copyright"><small>&copy; 2026 Chvaral. Tous droits réservés.</small></p>
+            <script type="module" src="script/speedlify2-score.js"></script>
+        </footer>
+    </body>
 </html>
