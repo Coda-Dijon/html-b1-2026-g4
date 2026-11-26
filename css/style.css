@@ -623,6 +623,12 @@ body>.footer_recette p {
     margin-left: 37%;
 }
 
+.Paragraphe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*-----------------------------------Partie mension legal-----------------------------------*/
 
 .ml1 {
