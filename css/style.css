@@ -310,44 +310,6 @@ input:focus-visible {
     font-size: 0.9rem;
 }
 
-/* ---------- Tablette / mobile ---------- */
-@media (max-width: 820px) {
-    .header {
-        flex-wrap: wrap;
-    }
-
-    .nav {
-        order: 3;
-        width: 100%;
-        margin: 0;
-    }
-
-    .pied {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* logo + badges sur toute la largeur */
-    .pied-marque {
-        grid-column: 1 / -1;
-    }
-}
-
-@media (max-width: 400px) {
-    .marque span {
-        font-size: 1.35rem;
-    }
-
-    .pied {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none !important;
-    }
-}
-
 /*-----------------------------------Partie restaurant-----------------------------------*/
 
 .main_resto {
@@ -383,17 +345,6 @@ input:focus-visible {
 
 .carte_nom {
     text-align: center;
-}
-
-@media (max-width: 560px) {
-    .main_resto {
-        width: 94%;
-    }
-
-    .recettes_resto {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
 }
 
 /*-----------------------------------Partie recettes-----------------------------------*/
@@ -540,27 +491,6 @@ dd {
     color: var(--texte);
 }
 
-/* Adaptation mobile : repasse en vertical sous 480px */
-@media (max-width: 480px) {
-    dl {
-        grid-auto-flow: row;
-        grid-template-rows: auto;
-        gap: 0;
-    }
-
-    dt, dd {
-        grid-row: auto;
-    }
-
-    dd {
-        margin-bottom: 1rem;
-    }
-
-    dd:last-child {
-        margin-bottom: 0;
-    }
-}
-
 /*-----------------------------------Partie futur-----------------------------------*/
 
 .hero-slide {
@@ -690,4 +620,79 @@ dd {
     color: var(--texte);
     text-transform: none;
     font-size: 1rem;
+}
+
+/*-----------------------------------media-----------------------------------*/
+
+/*partie general*/
+/* ---------- Tablette / mobile ---------- */
+@media (max-width: 820px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        margin: 0;
+    }
+
+    .pied {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* logo + badges sur toute la largeur */
+    .pied-marque {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 400px) {
+    .marque span {
+        font-size: 1.35rem;
+    }
+
+    .pied {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/*partie restaurant*/
+@media (max-width: 560px) {
+    .main_resto {
+        width: 94%;
+    }
+
+    .recettes_resto {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/*partie recette*/
+/* Adaptation mobile : repasse en vertical sous 480px */
+@media (max-width: 480px) {
+    dl {
+        grid-auto-flow: row;
+        grid-template-rows: auto;
+        gap: 0;
+    }
+
+    dt, dd {
+        grid-row: auto;
+    }
+
+    dd {
+        margin-bottom: 1rem;
+    }
+
+    dd:last-child {
+        margin-bottom: 0;
+    }
 }
