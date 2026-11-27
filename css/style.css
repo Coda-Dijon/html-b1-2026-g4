@@ -1,13 +1,5 @@
 /*-----------------------------------Partie Global et accueil-----------------------------------*/
 
-@font-face {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 100 900;
-    font-display: swap;
-    src: url("../fonts/InterVariable.woff2") format("woff2");
-}
-
 :root {
     --fond: #0b0b0c;
     --surface: #161618;
@@ -31,10 +23,6 @@
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-html {
-    -webkit-text-size-adjust: 100%;
 }
 
 body {
