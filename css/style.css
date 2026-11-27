@@ -421,6 +421,10 @@ body>.header_recette {
     text-align: center;
 }
 
+.titre_recette{
+    text-transform: uppercase;
+}
+
 .nav_recette[aria-label="Fil d'Ariane"] {
     margin-bottom: 1rem;
 }
