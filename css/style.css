@@ -367,6 +367,7 @@ input:focus-visible {
     max-width: 1800px;
     margin: 0 auto;
     padding: 0 0 40px;
+    flex: 1;
 }
 
 .titre_resto {
@@ -389,9 +390,6 @@ input:focus-visible {
     width: 100%;
     aspect-ratio: 16 / 9;
     border: 2px solid var(--texte);
-}
-
-img.carte_image {
     object-fit: cover;
 }
 
@@ -413,7 +411,7 @@ img.carte_image {
 /*-----------------------------------Partie recettes-----------------------------------*/
 
 /* En-tête & navigation */
-body>.header_recette {
+.header_recette {
     width: 100%;
     max-width: 720px;
     margin: 2.5rem auto 1.5rem;
@@ -421,53 +419,50 @@ body>.header_recette {
     text-align: center;
 }
 
-.titre_recette{
+.header_recette h1 {
+    margin: 0 0 0.75rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.85rem, 4vw, 2.5rem);
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
-.nav_recette[aria-label="Fil d'Ariane"] {
+.header_recette p {
+    margin: 0;
+}
+
+.nav_recette {
     margin-bottom: 1rem;
 }
 
-.nav_recette[aria-label="Fil d'Ariane"] a {
+.nav_recette a {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    color: var(--texte);
-    text-decoration: none;
     font-weight: 600;
     font-size: 0.95rem;
     padding: 0.35rem 0.75rem;
     border-radius: 999px;
     background-color: var(--surface-2);
     border: 1px solid var(--bordure);
-    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    transition: background-color 0.2s, border-color 0.2s;
 }
 
-.nav_recette[aria-label="Fil d'Ariane"] a::before {
+.nav_recette a::before {
     content: "←";
     color: var(--rouge-vif);
-    transition: color 0.2s ease;
+    transition: color 0.2s;
 }
 
-.nav_recette[aria-label="Fil d'Ariane"] a:hover,
-.nav_recette[aria-label="Fil d'Ariane"] a:focus-visible {
+.nav_recette a:hover,
+.nav_recette a:focus-visible {
     background-color: var(--rouge);
     border-color: var(--rouge);
-    color: var(--texte);
     outline: none;
 }
 
-.nav_recette[aria-label="Fil d'Ariane"] a:hover::before,
-.nav_recette[aria-label="Fil d'Ariane"] a:focus-visible::before {
-    color: var(--texte);
-}
-
-body>.header_recette h1 {
-    margin: 0 0 0.75rem;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.85rem, 4vw, 2.5rem);
-    line-height: 1.2;
+.nav_recette a:hover::before,
+.nav_recette a:focus-visible::before {
     color: var(--texte);
 }
 
@@ -541,7 +536,7 @@ dl {
     text-align: center;
 }
 
-.dt_recette {
+dt {
     grid-row: 1;
     font-size: 0.78rem;
     font-weight: 700;
@@ -550,7 +545,7 @@ dl {
     color: var(--discret);
 }
 
-.dd_recette {
+dd {
     grid-row: 2;
     margin: 0;
     font-weight: 600;
@@ -565,16 +560,15 @@ dl {
         gap: 0;
     }
 
-    .dt_recette,
-    .dd_recette {
+    dt, dd {
         grid-row: auto;
     }
 
-    .dd_recette {
+    dd {
         margin-bottom: 1rem;
     }
 
-    .dd_recette:last-child {
+    dd:last-child {
         margin-bottom: 0;
     }
 }
@@ -602,8 +596,6 @@ dl {
 .slide {
     width: 25%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 80px;
@@ -686,18 +678,14 @@ dl {
 .actu h2 {
     text-wrap-mode: nowrap;
     min-height: 20px ;
-    margin-left: 30% ;
-    margin-right: 30% ;
+    margin-inline: 30%;
     font-size: clamp(0.5rem , 1.25rem , 2.5rem);
 }
 
-.actu p {
+.actu p, .actu li {
     font-size: 1rem;
 }
 
-.actu ul li {
-    font-size: 1rem;
-}
 
 .Paragraphe {
     min-width:300px ;
@@ -710,40 +698,8 @@ dl {
 
 /*-----------------------------------Partie mension legal-----------------------------------*/
 
-.ml1 {
-    grid-row: 1;
-    font-size: 0.78rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+.mension_legal dt{
     color: var(--texte);
-}
-
-.ml2 {
-    grid-row: 2;
-    margin: 0;
-    font-weight: 600;
-    color: var(--texte);
-}
-
-/* Adaptation mobile : repasse en vertical sous 480px */
-@media (max-width: 480px) {
-    dl {
-        grid-auto-flow: row;
-        grid-template-rows: auto;
-        gap: 0;
-    }
-
-    .ml1,
-    .ml2 {
-        grid-row: auto;
-    }
-
-    .ml2 {
-        margin-bottom: 1rem;
-    }
-
-    .ml2:last-child {
-        margin-bottom: 0;
-    }
+    text-transform: none;
+    font-size: 1rem;
 }
